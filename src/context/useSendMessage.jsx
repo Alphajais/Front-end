@@ -9,7 +9,7 @@ const useSendMessage = () => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        `/api/message/send/${selectedConversation._id}`,
+        `https://backend-z74d.onrender.com/api/message/send/${selectedConversation._id}`,
         { message }
       );
       setMessage([...messages, data]);

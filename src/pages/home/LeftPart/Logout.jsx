@@ -8,7 +8,7 @@ const Logout = () => {
   const handleLogout = async () => {
     setLoading(true);
     try {
-      await axios.post("/api/user/logout");
+      await axios.post("https://backend-z74d.onrender.com/api/user/logout");
       localStorage.removeItem("ChatApp");
       Cookies.remove("jwt");
       setLoading(false);

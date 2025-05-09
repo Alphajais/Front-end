@@ -30,7 +30,7 @@ function Signup() {
     };
     // console.log(userInfo);
     await axios
-      .post("/api/user/signup", userInfo)
+      .post("https://backend-z74d.onrender.com/api/user/signup", userInfo)
       .then((response) => {
         if (response.data) {
           toast.success("Signup successful");
